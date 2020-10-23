@@ -16,7 +16,7 @@ export class ProductComponent implements OnInit {
 
   constructor(private store: Store<AppState>) {
     this.products = this.store.select(state => state.product);
-    this.products.subscribe(li => console.log ("products: " + li));
+    //this.products.subscribe(li => console.log ("products: " + li));
   }
 
   addProduct(name, price) {
